@@ -44,7 +44,11 @@ def import_modules_under(root_dir, include_root_package_name=True, exclusions=No
     return (module_names, modules)
 
 def escape_xpath_value(value):
-    value = unicode(value)
+    # no need for future for this one
+    try:
+        value = unicode(value)
+    except:
+        value = str(value)
     if '"' in value and '\'' in value:
         parts_wo_apos = value.split('\'')
         return "concat('%s')" % "', \"'\", '".join(parts_wo_apos)

@@ -1,5 +1,6 @@
 import os
 import robot
+import six
 from robot.errors import DataError
 from selenium import webdriver
 from Selenium2Library import webdrivermonkeypatches
@@ -604,7 +605,7 @@ class _BrowserManagementKeywords(KeywordGroup):
 
         desired_capabilities_object = capabilities_type.copy()
 
-        if type(desired_capabilities) in (str, unicode):
+        if isinstance(desired_capabilities, six.string_types):
             desired_capabilities = self._parse_capabilities_string(desired_capabilities)
 
         desired_capabilities_object.update(desired_capabilities or {})
