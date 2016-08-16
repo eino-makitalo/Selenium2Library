@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import verification
-from mocking import mock, TestDouble
-from mock_registry import mock_registry
-from verification import VerificationError
+from . import verification
+from .mocking import mock, TestDouble
+from .mock_registry import mock_registry
+from .verification import VerificationError
 
 __copyright__ = "Copyright 2008-2010, Mockito Contributors"
 __license__ = "MIT"

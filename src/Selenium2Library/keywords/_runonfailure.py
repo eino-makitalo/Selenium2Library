@@ -1,5 +1,5 @@
 from robot.libraries import BuiltIn
-from keywordgroup import KeywordGroup
+from .keywordgroup import KeywordGroup
 
 BUILTIN = BuiltIn.BuiltIn()
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import matchers
+from . import matchers
 
 __copyright__ = "Copyright 2008-2010, Mockito Contributors"
 __license__ = "MIT"

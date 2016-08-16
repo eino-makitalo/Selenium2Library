@@ -1,8 +1,8 @@
 import os
 from fnmatch import fnmatch
-from browsercache import BrowserCache
-from librarylistener import LibraryListener
-import events
+from .browsercache import BrowserCache
+from .librarylistener import LibraryListener
+from . import events
 
 __all__ = [
     "get_child_packages_in",

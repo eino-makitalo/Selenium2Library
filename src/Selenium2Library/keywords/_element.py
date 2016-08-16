@@ -4,7 +4,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from Selenium2Library import utils
 from Selenium2Library.locators import ElementFinder
 from Selenium2Library.locators import CustomLocator
-from keywordgroup import KeywordGroup
+from .keywordgroup import KeywordGroup
 
 try:
     basestring  # attempt to evaluate basestring
